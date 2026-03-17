@@ -205,6 +205,7 @@ export function Services() {
                 {service.price}
               </Text>
               <Button
+                asChild
                 size="3"
                 variant={service.highlight ? "solid" : "soft"}
                 color={service.highlight ? "mint" : "gray"}
@@ -214,7 +215,7 @@ export function Services() {
                   transition: "all 0.2s",
                 }}
               >
-                Solicitar orçamento
+                <a href="#contato">Solicitar orçamento</a>
               </Button>
             </Box>
           </Card>
