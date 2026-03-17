@@ -127,7 +127,7 @@ export function Portfolio() {
                 {project.image ? (
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`Screenshot da ${project.title}`}
                     loading="lazy"
                     decoding="async"
                     className="portfolio-img"

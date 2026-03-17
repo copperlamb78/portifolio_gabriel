@@ -141,7 +141,7 @@ export function Services() {
           style={{ maxWidth: "600px" }}
         >
           Criação de sites rápidos, modernos e preparados para atrair e
-          converter mais clientes na internet.
+          converter visitantes em clientes.
         </Text>
       </Flex>
 

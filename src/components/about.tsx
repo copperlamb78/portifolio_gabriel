@@ -51,7 +51,7 @@ const DevPhotoPlaceholder = () => (
     <Avatar fallback="AG" size="9" radius="full" color="mint" highContrast />
     <img
       src={MinhaImg}
-      alt="Antonio Gabriel"
+      alt="Foto de Antonio Gabriel, Desenvolvedor Web em Feira de Santana"
       loading="lazy"
       decoding="async"
       style={{
@@ -130,25 +130,23 @@ export function About() {
             </Text>
             <Heading
               as="h1"
-              size={{ initial: "7", md: "8" }}
+              size={{ initial: "8", md: "9" }}
               style={{ letterSpacing: "-0.02em" }}
             >
-              Desenvolvedor focado em criar soluções que realmente geram
-              resultado
+              Desenvolvedor Web em Feira de Santana-BA Focado em Resultados
             </Heading>
           </Box>
 
           <Text
             as="p"
-            size={{ initial: "3", md: "4" }}
+            size={{ initial: "4", md: "4" }}
             color="gray"
             style={{ lineHeight: "1.7" }}
           >
-            Olá! Sou Antonio Gabriel, um desenvolvedor fullstack apaixonado por
-            transformar ideias em realidade digital. Com sólida experiência em
-            React, Node.js e na construção de APIs robustas, meu foco é entregar
-            não apenas código, mas soluções completas que impulsionam o seu
-            negócio.
+            Olá! Sou Antonio Gabriel, desenvolvedor fullstack especialista na
+            criação de sites e sistemas web aqui em Feira de Santana. Meu foco é
+            entregar não apenas código, mas soluções completas que geram
+            crescimento e impulsionam o seu negócio na internet.
           </Text>
 
           {/* Diferenciais */}
