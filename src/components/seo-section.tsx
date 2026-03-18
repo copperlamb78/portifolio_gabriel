@@ -19,8 +19,8 @@ export function SeoSection() {
         style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}
       >
         <Heading as="h2" size={{ initial: "6", md: "8" }} weight="bold">
-          Criar Site em Feira de Santana: Como aumentar seus clientes com um
-          site profissional
+          Presença digital forte: Como aumentar seus clientes com um site
+          profissional
         </Heading>
 
         <Text
@@ -28,10 +28,10 @@ export function SeoSection() {
           color="gray"
           style={{ lineHeight: "1.7", textAlign: "left", width: "100%" }}
         >
-          Ter uma presença online forte deixou de ser apenas um diferencial. A{" "}
-          <strong>criação de sites em Feira de Santana</strong> permite que
-          empresas e profissionais locais sejam encontrados por novos clientes
-          24 horas por dia, 7 dias por semana.
+          Ter um site hoje em dia deixou de ser apenas um diferencial. A criação
+          de um <strong>site profissional</strong> permite que sua empresa e
+          seus serviços sejam encontrados por novos clientes 24 horas por dia, 7
+          dias por semana, em qualquer lugar do país.
         </Text>
 
         <Text
@@ -39,11 +39,11 @@ export function SeoSection() {
           color="gray"
           style={{ lineHeight: "1.7", textAlign: "left", width: "100%" }}
         >
-          Ao investir em um <strong>site profissional</strong>, você transmite
-          mais confiança, destaca seus serviços no Google e facilita o contato
-          de quem já está buscando ativamente pelo que você oferece. Como
-          desenvolvedor web na Bahia, desenvolvo soluções com design fluido
-          (responsivo para celular), rápido e focado 100% em conversão.
+          Com base em <strong>Feira de Santana, Bahia</strong>, ofereço
+          atendimento online completo para empresas de{" "}
+          <strong>todo o Brasil</strong>. Desenvolvo soluções com design fluido
+          (responsivo para celular), ultrarrápidas e com estrutura 100% focada
+          em captar leads e alavancar vendas.
         </Text>
 
         <Button
@@ -57,7 +57,7 @@ export function SeoSection() {
           {/* Link interno otimizado apontando para a seção de contato */}
           <a href="#contato">
             <FaWhatsapp style={{ marginRight: "8px" }} />
-            Solicite um site profissional em Feira de Santana
+            Solicitar orçamento
           </a>
         </Button>
       </Flex>

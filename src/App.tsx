@@ -9,6 +9,7 @@ import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
 import { SeoSection } from "./components/seo-section";
 import { useTheme } from "./ThemeContext";
+import { Footer } from "./components/footer";
 
 export function App() {
   const { theme } = useTheme();
@@ -43,6 +44,7 @@ export function App() {
         <Skills />
         <SeoSection />
         <Contact />
+        <Footer />
       </Box>
     </Theme>
   );

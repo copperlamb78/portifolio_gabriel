@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Button } from "@radix-ui/themes";
+import { Box, Flex, Heading, Text, Button, Badge } from "@radix-ui/themes";
 import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 
 export function Hero() {
@@ -26,15 +26,19 @@ export function Hero() {
         style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}
         gap="5"
       >
+        <Badge color="mint" radius="full" size="2" variant="soft" mb="-3">
+          Atendimento 100% online para todo o Brasil
+        </Badge>
+
         <Heading
           as="h1"
           size={{ initial: "8", md: "9" }}
           weight="bold"
           style={{ letterSpacing: "-0.03em", lineHeight: 1.1 }}
         >
-          Criar Site em Feira de Santana |{" "}
-          <Text as="span" style={{ display: "block" }} color="mint">
-            Sites Profissionais e Sistemas Sob Medida
+          Criação de Sites e Sistemas <br />
+          <Text as="span" color="mint">
+            Sob Medida para Empresas
           </Text>
         </Heading>
 
@@ -43,8 +47,8 @@ export function Hero() {
           color="gray"
           style={{ maxWidth: "700px", lineHeight: 1.5 }}
         >
-          Aumente seus clientes com a criação de sites em Feira de Santana
-          rápidos, modernos e focados em conversão.
+          Atendo clientes de todo o Brasil com sites rápidos, modernos e focados
+          em resultado.
         </Text>
 
         <Text size="4" color="gray" style={{ maxWidth: "650px" }}>
@@ -67,7 +71,7 @@ export function Hero() {
           >
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={24} style={{ marginRight: "8px" }} />
-              Criar meu site em Feira de Santana
+              Falar no WhatsApp
             </a>
           </Button>
 

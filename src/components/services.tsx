@@ -134,7 +134,7 @@ export function Services() {
           mb="3"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Serviços de criação de sites na Bahia
+          Soluções completas para o seu negócio
         </Heading>
         <Text
           size={{ initial: "3", md: "4" }}

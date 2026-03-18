@@ -163,10 +163,10 @@ export function Navbar() {
             </TabNav.Link>
             <TabNav.Link
               asChild
-              active={pathname === "#beneficios"}
-              className={pathname === "#beneficios" ? "active-tab" : ""}
+              active={pathname === "#skills"}
+              className={pathname === "#skills" ? "active-tab" : ""}
             >
-              <a href="#beneficios">Benefícios</a>
+              <a href="#skills">Skills</a>
             </TabNav.Link>
           </TabNav.Root>
 
@@ -251,8 +251,8 @@ export function Navbar() {
                   </a>
                 </DropdownMenu.Item>
                 <DropdownMenu.Item asChild>
-                  <a href="#beneficios" style={{ cursor: "pointer" }}>
-                    Benefícios
+                  <a href="#skills" style={{ cursor: "pointer" }}>
+                    Skills
                   </a>
                 </DropdownMenu.Item>
               </DropdownMenu.Content>
