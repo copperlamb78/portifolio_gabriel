@@ -142,6 +142,13 @@ export function Navbar() {
           <TabNav.Root>
             <TabNav.Link
               asChild
+              active={pathname === "#sobre"}
+              className={pathname === "#sobre" ? "active-tab" : ""}
+            >
+              <a href="#sobre">Sobre mim</a>
+            </TabNav.Link>
+            <TabNav.Link
+              asChild
               active={pathname === "#servicos"}
               className={pathname === "#servicos" ? "active-tab" : ""}
             >
@@ -153,13 +160,6 @@ export function Navbar() {
               className={pathname === "#portfolio" ? "active-tab" : ""}
             >
               <a href="#portfolio">Portfólio</a>
-            </TabNav.Link>
-            <TabNav.Link
-              asChild
-              active={pathname === "#sobre"}
-              className={pathname === "#sobre" ? "active-tab" : ""}
-            >
-              <a href="#sobre">Sobre mim</a>
             </TabNav.Link>
             <TabNav.Link
               asChild
