@@ -121,7 +121,7 @@ export function About() {
               size={{ initial: "8", md: "9" }}
               style={{ letterSpacing: "-0.02em" }}
             >
-              Desenvolvedor Web em Feira de Santana Focado em Resultados
+              Desenvolvedor web em Feira de Santana
             </Heading>
           </Box>
 
@@ -131,12 +131,12 @@ export function About() {
             color="gray"
             style={{ lineHeight: "1.7" }}
           >
-            Olá! Sou Antonio Gabriel, especialista em criação de sites
-            profissionais em Feira de Santana, Bahia. Ajudo empresas e
-            profissionais liberais que precisam de uma presença digital forte
-            para atrair mais clientes. Minha missão é entregar soluções sob
-            medida — sites rápidos, modernos e otimizados para o Google — que
-            funcionam como uma verdadeira máquina de vendas para o seu negócio.
+            Olá! Sou Antonio Gabriel, desenvolvedor web na Bahia. Especialista
+            na criação de sites profissionais em Feira de Santana, ajudo
+            empresas e profissionais liberais a conquistarem uma presença
+            digital local mais forte. Minha missão é entregar soluções de alta
+            performance — sites rápidos, modernos e otimizados — que se tornam o
+            principal canal de vendas online da sua empresa.
           </Text>
 
           {/* Diferenciais */}
@@ -167,7 +167,7 @@ export function About() {
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              Falar no WhatsApp
+              Falar com desenvolvedor web
             </a>
           </Button>
         </Flex>

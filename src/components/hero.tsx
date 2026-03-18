@@ -32,8 +32,10 @@ export function Hero() {
           weight="bold"
           style={{ letterSpacing: "-0.03em", lineHeight: 1.1 }}
         >
-          Criação de Sites e Sistemas Sob Medida em{" "}
-          <Text color="mint">Feira de Santana</Text>
+          Criar Site em Feira de Santana |{" "}
+          <Text as="span" style={{ display: "block" }} color="mint">
+            Sites Profissionais e Sistemas Sob Medida
+          </Text>
         </Heading>
 
         <Text
@@ -41,8 +43,8 @@ export function Hero() {
           color="gray"
           style={{ maxWidth: "700px", lineHeight: 1.5 }}
         >
-          Ajudo empresas a conquistarem mais clientes com sites rápidos,
-          modernos e focados em resultado.
+          Aumente seus clientes com a criação de sites em Feira de Santana
+          rápidos, modernos e focados em conversão.
         </Text>
 
         <Text size="4" color="gray" style={{ maxWidth: "650px" }}>
@@ -65,7 +67,7 @@ export function Hero() {
           >
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={24} style={{ marginRight: "8px" }} />
-              Falar no WhatsApp
+              Criar meu site em Feira de Santana
             </a>
           </Button>
 

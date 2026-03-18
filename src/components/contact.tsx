@@ -134,10 +134,10 @@ export function Contact() {
               Vamos tirar sua ideia do <Text color="mint">papel?</Text>
             </Heading>
             <Text size="4" color="gray" style={{ lineHeight: "1.6" }}>
-              Precisa de um Desenvolvedor Web em Feira de Santana para
+              Precisa de um site profissional em Feira de Santana para
               impulsionar seu negócio? Me chama para conversarmos. Solicite a
-              criação de sites profissionais, landing pages de alta conversão ou
-              um sistema web sob medida.
+              criação de site na Bahia, seja uma landing page de alta conversão
+              ou um sistema web totalmente personalizado.
             </Text>
           </Box>
 
@@ -164,7 +164,7 @@ export function Contact() {
             >
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size={24} style={{ marginRight: "8px" }} />
-                Falar no WhatsApp
+                Falar com desenvolvedor web
               </a>
             </Button>
 

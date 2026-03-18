@@ -7,6 +7,7 @@ import { Services } from "./components/services";
 import { Portfolio } from "./components/portfolio";
 import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
+import { SeoSection } from "./components/seo-section";
 import { useTheme } from "./ThemeContext";
 
 export function App() {
@@ -40,6 +41,7 @@ export function App() {
         <Services />
         <Portfolio />
         <Skills />
+        <SeoSection />
         <Contact />
       </Box>
     </Theme>

@@ -134,7 +134,7 @@ export function Services() {
           mb="3"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Criação de sites profissionais na Bahia
+          Serviços de criação de sites na Bahia
         </Heading>
         <Text
           size={{ initial: "3", md: "4" }}
@@ -221,7 +221,7 @@ export function Services() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Falar no WhatsApp
+                  Solicitar criação de site
                 </a>
               </Button>
             </Box>
