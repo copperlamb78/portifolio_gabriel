@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Button, Badge } from "@radix-ui/themes";
+import { Box, Flex, Heading, Text, Button } from "@radix-ui/themes";
 import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 
 export function Hero() {
@@ -26,19 +26,15 @@ export function Hero() {
         style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}
         gap="5"
       >
-        <Badge color="mint" radius="full" size="2" variant="soft" mb="-3">
-          Atendimento 100% online para todo o Brasil
-        </Badge>
-
         <Heading
           as="h1"
           size={{ initial: "8", md: "9" }}
           weight="bold"
           style={{ letterSpacing: "-0.03em", lineHeight: 1.1 }}
         >
-          Criação de Sites e Sistemas <br />
+          Sites e Sistemas Sob Medida <br />
           <Text as="span" color="mint">
-            Sob Medida para Empresas
+            que Impulsionam seu Negócio
           </Text>
         </Heading>
 
@@ -47,13 +43,13 @@ export function Hero() {
           color="gray"
           style={{ maxWidth: "700px", lineHeight: 1.5 }}
         >
-          Atendo clientes de todo o Brasil com sites rápidos, modernos e focados
-          em resultado.
+          Eleve seu negócio digital com sites rápidos, modernos e focados em
+          resultado que ajudam empresas a vender mais online.
         </Text>
 
         <Text size="4" color="gray" style={{ maxWidth: "650px" }}>
           Landing pages, sites institucionais e sistemas web personalizados para
-          o seu negócio crescer na Bahia e em todo o Brasil.
+          o seu negócio crescer em todo o Brasil.
         </Text>
 
         <Flex gap="4" mt="4" wrap="wrap" justify="center">

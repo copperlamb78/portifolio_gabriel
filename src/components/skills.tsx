@@ -220,29 +220,6 @@ export function Skills() {
           </Card>
         ))}
       </Grid>
-
-      {/* Frase Extra de Diferencial */}
-      <Flex justify="center" mt={{ initial: "7", md: "9" }}>
-        <Box
-          px="5"
-          py="3"
-          style={{
-            backgroundColor: "var(--mint-a2)",
-            border: "1px solid var(--mint-a4)",
-            borderRadius: "var(--radius-full)",
-          }}
-        >
-          <Flex gap="2" align="center">
-            <Text color="mint" weight="bold" size="3">
-              ✨
-            </Text>
-            <Text size="2" color="gray" weight="medium">
-              Estou sempre aprendendo novas tecnologias para entregar as
-              melhores soluções possíveis.
-            </Text>
-          </Flex>
-        </Box>
-      </Flex>
     </Box>
   );
 }

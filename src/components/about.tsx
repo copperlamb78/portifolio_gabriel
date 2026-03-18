@@ -121,7 +121,7 @@ export function About() {
               size={{ initial: "8", md: "9" }}
               style={{ letterSpacing: "-0.02em" }}
             >
-              Desenvolvedor web focado no seu crescimento
+              Desenvolvedor Web que Impulsiona o Crescimento do seu Negócio
             </Heading>
           </Box>
 
@@ -133,11 +133,11 @@ export function About() {
           >
             Olá! Sou Antonio Gabriel, desenvolvedor web de Feira de Santana,
             Bahia, com atendimento online para projetos em todo o Brasil. Ajudo
-            empresas e profissionais liberais a conquistarem uma presença
-            digital forte para escalar seus negócios. Minha missão é entregar
-            soluções de alta performance — sites rápidos, modernos e otimizados
-            — que funcionem como uma verdadeira máquina de vendas para sua
-            empresa.
+            empresas e profissionais a construírem uma presença digital forte e
+            estratégica, capaz de atrair clientes e gerar resultados reais. Meu
+            foco é criar sites rápidos, modernos e funcionais, pensados não
+            apenas para existir, mas para atuar como uma ferramenta de
+            crescimento para o seu negócio.
           </Text>
 
           {/* Diferenciais */}

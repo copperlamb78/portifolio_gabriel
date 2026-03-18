@@ -39,8 +39,7 @@ export function SeoSection() {
           color="gray"
           style={{ lineHeight: "1.7", textAlign: "left", width: "100%" }}
         >
-          Com base em <strong>Feira de Santana, Bahia</strong>, ofereço
-          atendimento online completo para empresas de{" "}
+          Ofereço atendimento online completo para empresas de{" "}
           <strong>todo o Brasil</strong>. Desenvolvo soluções com design fluido
           (responsivo para celular), ultrarrápidas e com estrutura 100% focada
           em captar leads e alavancar vendas.
