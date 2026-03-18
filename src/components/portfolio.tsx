@@ -79,6 +79,7 @@ export function Portfolio() {
         style={{ textAlign: "center" }}
       >
         <Heading
+          as="h2"
           size={{ initial: "7", md: "8" }}
           weight="bold"
           mb="3"
@@ -91,8 +92,8 @@ export function Portfolio() {
           color="gray"
           style={{ maxWidth: "600px" }}
         >
-          Alguns dos trabalhos desenvolvidos com foco total em performance,
-          excelência de design e conversão.
+          Conheça projetos desenvolvidos com foco em soluções sob medida e
+          performance, aliando excelência de design à alta taxa de conversão.
         </Text>
       </Flex>
 
@@ -159,7 +160,7 @@ export function Portfolio() {
                   >
                     {project.type}
                   </Badge>
-                  <Heading size="5" mb="2">
+                  <Heading as="h3" size="5" mb="2">
                     {project.title}
                   </Heading>
                   <Text size="2" color="gray" style={{ lineHeight: "1.6" }}>

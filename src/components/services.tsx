@@ -21,7 +21,7 @@ const servicesData = [
   {
     title: "Landing Page Profissional",
     description:
-      "Página única otimizada para captar clientes, vender produtos ou promover anúncios.",
+      "Desenvolvimento de landing pages de alta conversão, focadas em captar clientes, vender produtos e maximizar o retorno de anúncios.",
     target: "Negócios que querem vender ou captar leads",
     benefits: [
       "Carregamento ultra rápido",
@@ -34,7 +34,7 @@ const servicesData = [
   {
     title: "Site Institucional Completo",
     description:
-      "Presença online imponente para transmitir credibilidade e autoridade no seu mercado.",
+      "Criação de sites profissionais que transmitem autoridade. Estruturamos sites rápidos e otimizados para destacar sua marca no Google.",
     target: "Empresas, profissionais liberais e negócios locais",
     benefits: [
       "Múltiplas páginas estruturadas",
@@ -47,7 +47,7 @@ const servicesData = [
   {
     title: "Sistema Web Sob Medida",
     description:
-      "Plataformas personalizadas, painéis administrativos e automação de processos complexos.",
+      "Desenvolvimento web de plataformas personalizadas, painéis administrativos e automação inteligente através de soluções sob medida.",
     target: "Empresas que precisam de soluções tecnológicas específicas",
     benefits: [
       "Desenvolvimento de Backend completo",
@@ -128,20 +128,22 @@ export function Services() {
         style={{ textAlign: "center" }}
       >
         <Heading
+          as="h2"
           size={{ initial: "7", md: "8" }}
           weight="bold"
           mb="3"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Soluções sob medida para o seu negócio
+          Soluções sob medida em desenvolvimento web
         </Heading>
         <Text
           size={{ initial: "3", md: "4" }}
           color="gray"
           style={{ maxWidth: "600px" }}
         >
-          Criação de sites rápidos, modernos e preparados para atrair e
-          converter visitantes em clientes.
+          Especialista em criação de sites profissionais, páginas otimizadas
+          para resultados e sistemas escaláveis desenhados para o seu
+          crescimento.
         </Text>
       </Flex>
 
@@ -170,7 +172,7 @@ export function Services() {
             }}
           >
             <Flex direction="column" style={{ flex: 1 }}>
-              <Heading size="5" mb="2">
+              <Heading as="h3" size="5" mb="2">
                 {service.title}
               </Heading>
               <Text size="2" color="gray" mb="4" style={{ lineHeight: "1.5" }}>
@@ -230,7 +232,12 @@ export function Services() {
           mb="7"
           style={{ textAlign: "center" }}
         >
-          <Heading size={{ initial: "6", md: "7" }} weight="bold" mb="2">
+          <Heading
+            as="h2"
+            size={{ initial: "6", md: "7" }}
+            weight="bold"
+            mb="2"
+          >
             Resultados que você pode esperar
           </Heading>
           <Text
@@ -254,7 +261,7 @@ export function Services() {
                 <Box style={{ color: "var(--mint-9)", marginBottom: "4px" }}>
                   <result.icon size={28} />
                 </Box>
-                <Heading size="4" weight="bold">
+                <Heading as="h3" size="4" weight="bold">
                   {result.title}
                 </Heading>
                 <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>

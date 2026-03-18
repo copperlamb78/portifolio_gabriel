@@ -129,11 +129,11 @@ export function About() {
               SOBRE MIM
             </Text>
             <Heading
-              as="h1"
+              as="h2"
               size={{ initial: "8", md: "9" }}
               style={{ letterSpacing: "-0.02em" }}
             >
-              Desenvolvedor Web em Feira de Santana-BA Focado em Resultados
+              Desenvolvedor Web em Feira de Santana Focado em Resultados
             </Heading>
           </Box>
 
@@ -143,10 +143,11 @@ export function About() {
             color="gray"
             style={{ lineHeight: "1.7" }}
           >
-            Olá! Sou Antonio Gabriel, desenvolvedor fullstack especialista na
-            criação de sites e sistemas web aqui em Feira de Santana. Meu foco é
-            entregar não apenas código, mas soluções completas que geram
-            crescimento e impulsionam o seu negócio na internet.
+            Olá! Sou Antonio Gabriel, desenvolvedor web em Feira de Santana,
+            Bahia. Como especialista fullstack, minha missão vai além do código:
+            crio soluções sob medida em desenvolvimento web para alavancar o seu
+            negócio. Entrego sites rápidos, modernos e otimizados que combinam
+            alta performance com conversão real.
           </Text>
 
           {/* Diferenciais */}

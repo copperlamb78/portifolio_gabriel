@@ -8,7 +8,8 @@ import {
   DropdownMenu,
   IconButton,
 } from "@radix-ui/themes";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
+import { useTheme } from "../ThemeContext";
 
 export function Navbar() {
   // Estado para armazenar o link ativo (ex: #servicos)
@@ -21,6 +22,7 @@ export function Navbar() {
     opacity: 0,
   });
   const navRef = useRef<HTMLDivElement>(null);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleHashChange = () =>
@@ -83,6 +85,12 @@ export function Navbar() {
         .rt-TabNavLink:hover {
           background-color: transparent !important;
         }
+        .theme-toggle-icon {
+          transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+        .theme-toggle-icon:hover {
+          transform: rotate(30deg) scale(1.1);
+        }
       `}</style>
 
       <Flex
@@ -102,9 +110,27 @@ export function Navbar() {
         }}
       >
         <Box style={{ flex: 1 }}>
-          <Text weight="bold" size="4" style={{ letterSpacing: "-0.02em" }}>
-            Antonio Gabriel
-          </Text>
+          <a
+            href="#inicio"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              outline: "none",
+            }}
+            aria-label="Ir para o início"
+          >
+            <Text
+              as="span"
+              weight="bold"
+              size="4"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              Antonio{" "}
+              <Text as="span" color="mint">
+                Gabriel
+              </Text>
+            </Text>
+          </a>
         </Box>
 
         <Box
@@ -162,6 +188,29 @@ export function Navbar() {
         </Box>
 
         <Flex justify="end" align="center" gap="3" style={{ flex: 1 }}>
+          {/* Botão de Alternância de Tema */}
+          <IconButton
+            variant="ghost"
+            color="gray"
+            radius="full"
+            onClick={toggleTheme}
+            style={{
+              cursor: "pointer",
+              transition: "background-color 0.3s ease",
+            }}
+            aria-label={
+              theme === "dark"
+                ? "Mudar para modo claro"
+                : "Mudar para modo escuro"
+            }
+          >
+            {theme === "dark" ? (
+              <FaSun size={20} className="theme-toggle-icon" />
+            ) : (
+              <FaMoon size={20} className="theme-toggle-icon" />
+            )}
+          </IconButton>
+
           <Button
             asChild
             variant="soft"

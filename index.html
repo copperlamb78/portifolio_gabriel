@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <title>Desenvolvedor Web em Feira de Santana | Antônio Gabriel</title>
+    <meta
+      name="description"
+      content="Antônio Gabriel — Soluções sob medida em desenvolvimento web. Criação de sites profissionais, rápidos e focados em resultados em Feira de Santana."
+    />
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("theme-preference");
+          var prefersLight = window.matchMedia(
+            "(prefers-color-scheme: light)",
+          ).matches;
+          if (storedTheme === "light" || (!storedTheme && prefersLight)) {
+            document.documentElement.classList.add("light");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

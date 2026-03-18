@@ -125,6 +125,7 @@ export function Contact() {
         <Flex direction="column" gap="5">
           <Box>
             <Heading
+              as="h2"
               size={{ initial: "8", md: "9" }}
               weight="bold"
               mb="3"
@@ -133,8 +134,10 @@ export function Contact() {
               Vamos tirar sua ideia do <Text color="mint">papel?</Text>
             </Heading>
             <Text size="4" color="gray" style={{ lineHeight: "1.6" }}>
-              Se você precisa de um site profissional ou sistema sob medida, me
-              chama que eu te ajudo a transformar isso em realidade.
+              Precisa de soluções sob medida em desenvolvimento web? Me chama
+              para conversarmos. Solicite a criação de sites profissionais,
+              landing pages de alta conversão ou um sistema web totalmente
+              personalizado.
             </Text>
           </Box>
 
@@ -228,7 +231,7 @@ export function Contact() {
                 style={{ backgroundColor: "var(--gray-a4)" }}
               />
 
-              <Heading size="4" mb="1">
+              <Heading as="h3" size="4" mb="1">
                 Ou me envie uma mensagem
               </Heading>
 
