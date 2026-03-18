@@ -5,111 +5,60 @@ import {
   Heading,
   Text,
   Card,
-  Tooltip,
   Separator,
 } from "@radix-ui/themes";
 import {
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiChakraui,
-  SiRadixui,
-  SiStyledcomponents,
-  SiHtml5,
-  SiJavascript,
-  SiTypescript,
-  SiVite,
-  SiNodedotjs,
-  SiExpress,
-  SiNestjs,
-  SiJsonwebtokens,
-  SiPm2,
-  SiPostgresql,
-  SiMongodb,
-  SiPython,
-  SiSelenium,
-  SiKotlin,
-  SiGit,
-  SiGithub,
-  SiFigma,
-} from "react-icons/si";
-import {
-  FaRobot,
-  FaDatabase,
-  FaCss3Alt,
-  FaJava,
-  FaVial,
-  FaClock,
-  FaSpider,
+  FaChartLine,
+  FaMobileAlt,
+  FaGoogle,
+  FaLock,
+  FaTachometerAlt,
+  FaHandshake,
 } from "react-icons/fa";
 
-const skillsData = [
+const benefitsData = [
   {
-    category: "Frontend",
-    skills: [
-      { name: "React.js", icon: SiReact, color: "#61DAFB" },
-      { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Chakra UI", icon: SiChakraui, color: "#319795" },
-      { name: "Radix UI", icon: SiRadixui, color: "#161618" },
-      { name: "Styled Comp.", icon: SiStyledcomponents, color: "#DB7093" },
-      { name: "HTML", icon: SiHtml5, color: "#E34F26" },
-      { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Vite", icon: SiVite, color: "#646CFF" },
-    ],
+    category: "Vendas e Conversão",
+    icon: FaChartLine,
+    description:
+      "Sites estruturados estrategicamente para guiar o visitante até o contato ou a compra, funcionando como um vendedor 24h por dia.",
   },
   {
-    category: "Backend",
-    skills: [
-      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "Express", icon: SiExpress, color: "#FFFFFF" },
-      { name: "NestJS", icon: SiNestjs, color: "#E0234E" },
-      { name: "JWT", icon: SiJsonwebtokens, color: "#FF0000" },
-      { name: "PM2", icon: SiPm2, color: "#2B037A" },
-      { name: "Cron Jobs", icon: FaClock, color: "#A0AEC0" },
-    ],
+    category: "Velocidade e Performance",
+    icon: FaTachometerAlt,
+    description:
+      "Páginas com carregamento ultra-rápido para garantir que seu cliente não desista de acessar e melhorar seu SEO no Google.",
   },
   {
-    category: "Banco de Dados",
-    skills: [
-      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-      { name: "SQL", icon: FaDatabase, color: "#F29111" },
-    ],
+    category: "Design Responsivo (Mobile)",
+    icon: FaMobileAlt,
+    description:
+      "A maioria dos seus clientes acessa pelo celular. Seu site será perfeitamente adaptado para oferecer a melhor experiência em qualquer tela.",
   },
   {
-    category: "Automação & Scraping",
-    skills: [
-      { name: "Python", icon: SiPython, color: "#3776AB" },
-      { name: "Selenium", icon: SiSelenium, color: "#43B02A" },
-      { name: "Playwright", icon: FaVial, color: "#2EAD33" },
-      { name: "Web Scraping", icon: FaSpider, color: "#A0AEC0" },
-      { name: "Automação", icon: FaRobot, color: "#A0AEC0" },
-    ],
+    category: "Otimização para o Google (SEO)",
+    icon: FaGoogle,
+    description:
+      "Aplicação das melhores práticas para que sua empresa seja encontrada facilmente quando clientes buscarem por seus serviços na sua região.",
   },
   {
-    category: "Outras Linguagens",
-    skills: [
-      { name: "Java", icon: FaJava, color: "#007396" },
-      { name: "Kotlin", icon: SiKotlin, color: "#7F52FF" },
-    ],
+    category: "Segurança e Estabilidade",
+    icon: FaLock,
+    description:
+      "Sistemas desenvolvidos com os mais altos padrões de segurança, garantindo a proteção dos dados da sua empresa e dos seus clientes.",
   },
   {
-    category: "Ferramentas & DevOps",
-    skills: [
-      { name: "Git", icon: SiGit, color: "#F05032" },
-      { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
-      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
-    ],
+    category: "Parceria e Suporte",
+    icon: FaHandshake,
+    description:
+      "Comunicação direta e sem termos técnicos complicados. Você terá todo o suporte necessário antes, durante e após a entrega do projeto.",
   },
 ];
 
 export function Skills() {
   return (
     <Box
-      id="skills"
+      id="beneficios"
       py={{ initial: "7", md: "9" }}
       px="4"
       style={{ scrollMarginTop: "80px" }}
@@ -156,15 +105,15 @@ export function Skills() {
           mb="3"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Tecnologias que utilizo
+          O que sua empresa ganha
         </Heading>
         <Text
           size={{ initial: "3", md: "4" }}
           color="gray"
           style={{ maxWidth: "600px" }}
         >
-          Ferramentas e tecnologias que utilizo para construir soluções rápidas,
-          escaláveis e de alta performance.
+          Benefícios reais de ter um site profissional focado em conversão e
+          crescimento.
         </Text>
       </Flex>
 
@@ -174,51 +123,27 @@ export function Skills() {
         gap="5"
         style={{ maxWidth: "1100px", margin: "0 auto" }}
       >
-        {skillsData.map((category, index) => (
+        {benefitsData.map((benefit, index) => (
           <Card key={index} size="3" className="skill-group-card">
-            <Heading size="4" mb="4" color="mint" weight="medium">
-              {category.category}
-            </Heading>
+            <Flex direction="column" gap="4">
+              <Flex align="center" gap="3">
+                <Box style={{ color: "var(--mint-9)" }}>
+                  <benefit.icon size={28} />
+                </Box>
+                <Heading size="4" color="mint" weight="bold">
+                  {benefit.category}
+                </Heading>
+              </Flex>
 
-            <Separator
-              size="4"
-              mb="5"
-              style={{ backgroundColor: "var(--gray-a4)" }}
-            />
+              <Separator
+                size="4"
+                style={{ backgroundColor: "var(--gray-a4)" }}
+              />
 
-            {/* Grid de Ícones de Habilidades */}
-            <Grid columns="3" gap="4" justify="center">
-              {category.skills.map((skill, i) => (
-                <Tooltip
-                  key={i}
-                  content={skill.name}
-                  side="bottom"
-                  delayDuration={100}
-                >
-                  <Flex
-                    direction="column"
-                    align="center"
-                    gap="2"
-                    className="skill-item"
-                    style={{ color: "var(--gray-11)" }}
-                    /* Usando onMouseEnter e onMouseLeave para ativar as cores originais dinamicamente é outra opção, mas preferimos usar apenas o Mint glow por limpeza visual */
-                  >
-                    <skill.icon size={36} className="icon-svg" />
-                    <Text
-                      size="1"
-                      weight="medium"
-                      style={{
-                        textAlign: "center",
-                        lineHeight: 1.2,
-                        opacity: 0.8,
-                      }}
-                    >
-                      {skill.name}
-                    </Text>
-                  </Flex>
-                </Tooltip>
-              ))}
-            </Grid>
+              <Text size="2" color="gray" style={{ lineHeight: 1.6 }}>
+                {benefit.description}
+              </Text>
+            </Flex>
           </Card>
         ))}
       </Grid>
@@ -239,8 +164,8 @@ export function Skills() {
               ✨
             </Text>
             <Text size="2" color="gray" weight="medium">
-              Estou sempre aprendendo novas tecnologias para entregar as
-              melhores soluções possíveis.
+              Foco total em trazer mais resultados para o seu negócio através da
+              internet.
             </Text>
           </Flex>
         </Box>

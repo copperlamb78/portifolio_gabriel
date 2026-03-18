@@ -2,6 +2,7 @@ import "@radix-ui/themes/styles.css";
 import { Box, Theme } from "@radix-ui/themes";
 import { Navbar } from "./components/navbar";
 import { About } from "./components/about";
+import { Hero } from "./components/hero";
 import { Services } from "./components/services";
 import { Portfolio } from "./components/portfolio";
 import { Skills } from "./components/skills";
@@ -34,6 +35,7 @@ export function App() {
 
       {/* O pt="9" (padding-top) cria um espaço para a Navbar fixa */}
       <Box pt="9">
+        <Hero />
         <About />
         <Services />
         <Portfolio />

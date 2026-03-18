@@ -21,7 +21,7 @@ const servicesData = [
   {
     title: "Landing Page Profissional",
     description:
-      "Desenvolvimento de landing pages de alta conversão, focadas em captar clientes, vender produtos e maximizar o retorno de anúncios.",
+      "Página criada para gerar clientes todos os dias para o seu negócio.",
     target: "Negócios que querem vender ou captar leads",
     benefits: [
       "Carregamento ultra rápido",
@@ -34,12 +34,12 @@ const servicesData = [
   {
     title: "Site Institucional Completo",
     description:
-      "Criação de sites profissionais que transmitem autoridade. Estruturamos sites rápidos e otimizados para destacar sua marca no Google.",
+      "Um site completo para sua empresa transmitir confiança e ser encontrada no Google.",
     target: "Empresas, profissionais liberais e negócios locais",
     benefits: [
       "Múltiplas páginas estruturadas",
       "Design profissional e exclusivo",
-      "Otimização para o Google (SEO) inclusa",
+      "Otimização para o Google (SEO local)",
     ],
     price: "A partir de R$ 3000",
     highlight: true, // Este card receberá um destaque visual
@@ -47,12 +47,12 @@ const servicesData = [
   {
     title: "Sistema Web Sob Medida",
     description:
-      "Desenvolvimento web de plataformas personalizadas, painéis administrativos e automação inteligente através de soluções sob medida.",
+      "Soluções personalizadas para automatizar processos e aumentar a produtividade da sua empresa.",
     target: "Empresas que precisam de soluções tecnológicas específicas",
     benefits: [
-      "Desenvolvimento de Backend completo",
-      "Integração com outras APIs e sistemas",
-      "Arquitetura escalável para o futuro",
+      "Plataformas exclusivas e seguras",
+      "Integração com outras ferramentas",
+      "Automação de tarefas manuais",
     ],
     price: "Sob consulta",
     highlight: false,
@@ -87,13 +87,13 @@ const resultsData = [
   {
     title: "Sistema pensado no seu negócio",
     description:
-      "Soluções tecnológicas desenhadas para resolver os seus problemas, não apenas templates genéricos.",
+      "Ferramentas exclusivas desenhadas para resolver os problemas reais da sua empresa.",
     icon: FaBrain,
   },
   {
-    title: "Fácil manutenção e escala",
+    title: "Pronto para crescer",
     description:
-      "Código limpo, estruturado e preparado para crescer junto com as demandas do seu projeto.",
+      "Sistemas desenvolvidos de forma escalável para acompanhar o crescimento das suas vendas.",
     icon: FaCode,
   },
 ];
@@ -134,16 +134,15 @@ export function Services() {
           mb="3"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Soluções sob medida em desenvolvimento web
+          Criação de sites profissionais na Bahia
         </Heading>
         <Text
           size={{ initial: "3", md: "4" }}
           color="gray"
           style={{ maxWidth: "600px" }}
         >
-          Especialista em criação de sites profissionais, páginas otimizadas
-          para resultados e sistemas escaláveis desenhados para o seu
-          crescimento.
+          Ofereço soluções completas focadas em aumentar suas vendas, captar
+          leads e destacar sua marca na internet.
         </Text>
       </Flex>
 
@@ -217,7 +216,13 @@ export function Services() {
                   transition: "all 0.2s",
                 }}
               >
-                <a href="#contato">Solicitar orçamento</a>
+                <a
+                  href="https://wa.me/5575992197406?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar no WhatsApp
+                </a>
               </Button>
             </Box>
           </Card>

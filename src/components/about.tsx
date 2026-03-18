@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Badge,
   Box,
   Button,
   Flex,
@@ -12,22 +11,11 @@ import {
 import MinhaImg from "../assets/minhaImg.jpeg";
 
 // --- DADOS DA SEÇÃO ---
-const skills = [
-  "React",
-  "Node.js",
-  "TypeScript",
-  "Next.js",
-  "APIs REST",
-  "PostgreSQL",
-  "MongoDB",
-  "UI/UX Design",
-];
-
 const differentiators = [
-  "Foco em performance e velocidade",
-  "Código limpo, escalável e de fácil manutenção",
+  "Sites otimizados para atrair e converter mais clientes",
+  "Design moderno que transmite confiança e profissionalismo",
   "Comunicação clara e objetiva, sem enrolação",
-  "Visão de negócio para entregar tecnologia que gera valor real",
+  "Soluções focadas no crescimento do seu negócio",
 ];
 
 // --- COMPONENTES INTERNOS ---
@@ -143,11 +131,12 @@ export function About() {
             color="gray"
             style={{ lineHeight: "1.7" }}
           >
-            Olá! Sou Antonio Gabriel, desenvolvedor web em Feira de Santana,
-            Bahia. Como especialista fullstack, minha missão vai além do código:
-            crio soluções sob medida em desenvolvimento web para alavancar o seu
-            negócio. Entrego sites rápidos, modernos e otimizados que combinam
-            alta performance com conversão real.
+            Olá! Sou Antonio Gabriel, especialista em criação de sites
+            profissionais em Feira de Santana, Bahia. Ajudo empresas e
+            profissionais liberais que precisam de uma presença digital forte
+            para atrair mais clientes. Minha missão é entregar soluções sob
+            medida — sites rápidos, modernos e otimizados para o Google — que
+            funcionam como uma verdadeira máquina de vendas para o seu negócio.
           </Text>
 
           {/* Diferenciais */}
@@ -164,26 +153,21 @@ export function About() {
             ))}
           </Flex>
 
-          {/* Skills */}
-          <Flex wrap="wrap" gap="2">
-            {skills.map((skill) => (
-              <Badge key={skill} variant="soft" color="gray" radius="full">
-                {skill}
-              </Badge>
-            ))}
-          </Flex>
-
           <Button
             asChild
             size="4"
             mt="4"
             style={{ cursor: "pointer", width: "fit-content" }}
+            color="mint"
+            variant="soft"
           >
             <a
-              href="#contato"
+              href="https://wa.me/5575992197406?text=Ol%C3%A1,%20gostaria%20de%20falar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site."
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              Vamos trabalhar juntos
+              Falar no WhatsApp
             </a>
           </Button>
         </Flex>

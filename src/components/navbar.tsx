@@ -13,7 +13,7 @@ import { useTheme } from "../ThemeContext";
 
 export function Navbar() {
   // Estado para armazenar o link ativo (ex: #servicos)
-  const [pathname, setPathname] = useState(window.location.hash || "#sobre");
+  const [pathname, setPathname] = useState(window.location.hash || "#inicio");
   const [indicatorStyle, setIndicatorStyle] = useState({
     left: 0,
     top: 0,
@@ -26,7 +26,7 @@ export function Navbar() {
 
   useEffect(() => {
     const handleHashChange = () =>
-      setPathname(window.location.hash || "#sobre");
+      setPathname(window.location.hash || "#inicio");
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
@@ -163,10 +163,10 @@ export function Navbar() {
             </TabNav.Link>
             <TabNav.Link
               asChild
-              active={pathname === "#skills"}
-              className={pathname === "#skills" ? "active-tab" : ""}
+              active={pathname === "#beneficios"}
+              className={pathname === "#beneficios" ? "active-tab" : ""}
             >
-              <a href="#skills">Skills</a>
+              <a href="#beneficios">Benefícios</a>
             </TabNav.Link>
           </TabNav.Root>
 
@@ -251,8 +251,8 @@ export function Navbar() {
                   </a>
                 </DropdownMenu.Item>
                 <DropdownMenu.Item asChild>
-                  <a href="#skills" style={{ cursor: "pointer" }}>
-                    Skills
+                  <a href="#beneficios" style={{ cursor: "pointer" }}>
+                    Benefícios
                   </a>
                 </DropdownMenu.Item>
               </DropdownMenu.Content>

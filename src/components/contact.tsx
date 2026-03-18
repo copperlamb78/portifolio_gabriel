@@ -134,10 +134,10 @@ export function Contact() {
               Vamos tirar sua ideia do <Text color="mint">papel?</Text>
             </Heading>
             <Text size="4" color="gray" style={{ lineHeight: "1.6" }}>
-              Precisa de soluções sob medida em desenvolvimento web? Me chama
-              para conversarmos. Solicite a criação de sites profissionais,
-              landing pages de alta conversão ou um sistema web totalmente
-              personalizado.
+              Precisa de um Desenvolvedor Web em Feira de Santana para
+              impulsionar seu negócio? Me chama para conversarmos. Solicite a
+              criação de sites profissionais, landing pages de alta conversão ou
+              um sistema web sob medida.
             </Text>
           </Box>
 
